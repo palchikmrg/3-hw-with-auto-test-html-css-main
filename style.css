@@ -33,14 +33,21 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+    display: flex;
+    align-items: center;
+
 }
 
 .text-wrapper {
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+    max-width: 425px;
 }
 
 .main-title {
@@ -65,6 +72,9 @@ header span {
 
 .about-section .wrapper {
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 select {
@@ -83,11 +93,14 @@ select {
 select:hover,
 .text-field:hover {
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+    border: 1px solid #2965F1;
 }
 
 
 .info-wrapper {
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section-title {
@@ -104,6 +117,9 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .frameworks-list {
@@ -161,6 +177,8 @@ form {
 
 .btn:hover {
     /* 📍 Стили для кнопки при наведении курсора */
+    background-color: #2965F1E5;
+    cursor:pointer
 }
 
 .line {
@@ -182,6 +200,8 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
+    display: flex;
+    align-items: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -194,4 +214,5 @@ footer {
 
 .footer-link:hover {
     /* 📍 Стили для ссылки при наведении курсора */
+    text-decoration: #2965F1;
 }
